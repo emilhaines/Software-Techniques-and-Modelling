@@ -55,7 +55,7 @@ plt.legend()
 plt.show()
 # %%
 # MAD
-mad = stats.median_absolute_deviation(data, axis=1)
+mad = stats.median_absolute_deviation(data, axis=1)/0.6745
 madm = np.mean(mad) # estimator
 madv = np.var(mad)
 counts4,_,_ = plt.hist(mad, histtype='step')
